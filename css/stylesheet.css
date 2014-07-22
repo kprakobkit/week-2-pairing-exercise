@@ -52,7 +52,7 @@ table {
 /*=========Stylesheet===========*/
 
 body {
-	background:url('img/halftone/halftone.png');
+	background:url('../img/halftone/halftone.png');
 	font-family: yo;
 	text-align: center;
 	line-height: 140%;
@@ -60,7 +60,7 @@ body {
 
 @font-face{
     font-family: "yo";
-    src: url('font/font1.woff');
+    src: url('../font/font1.woff');
 }
 
 /*@font-face{
