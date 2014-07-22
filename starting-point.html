@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Responsive Design and Fluid Layouts</title>
-  </head>
-  <body>
-
-
-  <div class="nav-bar-container">  
-    <nav class="responsive-navbar">
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Responsive Design and Fluid Layouts</title>
+</head>
+<body>
+  <header>
+    <div class="nav-bar-container">  
+      <nav class="responsive-navbar">
         <ul>
-          <li><h1><a href="starting-point.html">Responsive Design and Fluid Layouts</a><h1></li>
-          <li><h2>link 1</h2></li>
-          <li><h2>link 2</h2></li>
-          <li><h2>link 3</h2></li>
+        <!-- <li id="logo"><h1><a href="starting-point.html"><span style="font-family: monogly; font-size: 4em; padding-top:30px;">RDKP</span></a><h1></li> -->
+          <li id="logo"><a href="starting-point.html"><img style="width: 180px;" src="img/logo3.png"></a></li>
+          <li><h3><a href="starting-point.html">Home</a></h2></li>
+          <li><h3><a href="http://klaoha06.github.io/">Korn's Git</a></h3></li>
+          <li><h3><a href="http://kprakobkit.github.io/">Peter's Git</a></h3></li>
         </ul>
       </nav>
     </div>
+    <hr/>
+  </header>
+  <div class="responsive-design">
+    <h2>Responsive Design</h2>
+    <h4 id="name">By: Supakorn Laohasongkram and Peter Prakobkit</h4>
+    <p>
+      Web development was never easy. Media outlets are changing each day. There are also many broswer options available. Inconsistent window widths, screen resolutions, browser specific styles, and user installed fonts are but a few nuiances web developers have to put up with when making their content available through the web. Users no long only use the desktop to browse the web; the percentage of users that use mobile browsers are as much, if not already more than desktop browsers. Because of this, it becomes imperative for the designer to take all these factors into consideration when creating a web page, hence responsive design. 
+    </p><br>
+    <p>
+      Responsive design is an apporach aimed at creating web pages to provide an optimal user experience, that is content and layout adapts to the context and environment of the user. For a website that has been responsively designed, the layout of the page on a mobile device is different than when viewing it from a desktop. The font increases, the margin decreases, the image scales down properly, it utilizes a linear layout, as opposed to a 4-grid layout on the desktop. More importantly, responsive design also allows designers to cater different content to different media outlets, i.e. a user viewing the page from a mobile device may be looking for different content than someone viewing it from a tablet. This eliminates the need to developer different solutions for different media types for each new web page.
+    </p><br>
+    <p>
+      Responsive design accomplishes this via three technical components: flexible images, media queries, and fluid layout. 
+    </p><br>
+    <h3>Flexible Images</h3>
+    <p>
+      Flexible images enables images to resize proportionately based on the screen or browser size. An example of this is accomplished via setting an image's max-width property to 100%. However, since speed and efficiency in loading a web page is a big concern in web design, this solution may be an issue. An alternative is a technique presented by the Filament Group, makes a few image files available depending on the screen size.  
+    </p><br>
+    <h3>Media Queries</h3>
+    <p>
+      Media Queries is a CSS3 module that consists of a media type (screen, tv, etc.) and at least one conditional expression that tells the style to apply certain styles to attributes of the html elements based on the condition, for example, the width, color, and height of a div class.
+    </p><br>
+    <h3>Grid Layouts</h3>
+    <p>There are couple of css framework that implement grid-layout. These layouts are useful when dealing with responsive design. When the screen is big these grids lay side by side. However, when the screen are small the stack on one another to fit the smaller screen. These grids make design responsive web simpler and easier to implement than ever.</p><br>
+  </div> <!-- Responsive Design -->
 
-    <div class="header">
-      <h1>Responsive Design and Fluid Layouts</h1>
-      <h1>HELLO PETER</h1>
-      <h3>Description about the site here</h3>
-      <h4>By: Your Names here!</h4>
-    </div>
-
-    <div class="responsive-design">
-      <h2>Responsive Design</h2>
-      <p>
-        Web development was never easy. Media outlets are changing each day. There are also many broswer options available. Inconsistent window widths, screen resolutions, browser specific styles, and user installed fonts are but a few nuiances web developers have to put up with when making their content available through the web. Users no long only use the desktop to browse the web; the percentage of users that use mobile browsers are as much, if not already more than desktop browsers. Because of this, it becomes imperative for the designer to take all these factors into consideration when creating a web page, hence responsive design. 
-      </p>
-      <p>
-        Responsive design is an apporach aimed at creating web pages to provide an optimal user experience, that is content and layout adapts to the context and environment of the user. For a website that has been responsively designed, the layout of the page on a mobile device is different than when viewing it from a desktop. The font increases, the margin decreases, the image scales down properly, it utilizes a linear layout, as opposed to a 4-grid layout on the desktop. More importantly, responsive design also allows designers to cater different content to different media outlets, i.e. a user viewing the page from a mobile device may be looking for different content than someone viewing it from a tablet. This eliminates the need to developer different solutions for different media types for each new web page.
-      </p>
-      <p>
-        Responsive design accomplishes this via three technical components: flexible images, media queries, and fluid layout. 
-      </p>
-      <h3>Flexible Images</h3>
-      <p>
-        Flexible images enables images to resize proportionately based on the screen or browser size. An example of this is accomplished via setting an image's max-width property to 100%. However, since speed and efficiency in loading a web page is a big concern in web design, this solution may be an issue. An alternative is a technique presented by the Filament Group, makes a few image files available depending on the screen size.  
-      </p>
-      <h3>Media Queries</h3>
-      <p>
-        Media Queries is a CSS3 module that consists of a media type (screen, tv, etc.) and at least one conditional expression that tells the style to apply certain styles to attributes of the html elements based on the condition, for example, the width, color, and height of a div class.
-      </p>
-    </div>
+  <div class="fluid-layouts">
     <h2>Fluid Layouts</h2>
-    <div class="fluid-layouts">
-      Include information about fluid layouts you found. 
-      Add html tags where necessary.
+    <p>Fluid layouts is one type of layout possible to use or mix and match in order to create a responsive website. Interestingly, fluid layouts--if done correctly--could handle all types of screen and resolution with its silky smooth transit. This is one of the main advantages of the fluid layout over the fixed layout where often time the fixed layout feels very "snappy" and you could see a lot of drastic moving pieces flying across the page when changing resolution. The way fluid layouts does this begins by thinking differently: from thinking website in fixed unit like pixel to thinking in ratio and percentage.</p><br>
 
-      You can copy and paste your info here, but be sure to add a 
-      number and add the site to the references div below!
-    </div>
+    <p>Personally, thinking of website in term of percentage seems like a more slippery object to the finite unit like pixel. Nevertheless, this could be more intuitive than you thought!</p><br>
 
-    <div class="your-conclusion">
-      <h2>Your Conclusion</h2>
-      Discuss the purpose of responsive design and fluid layouts and whether
-      you think it's good practice to use them
-      Add html tags where necessary.
-    </div>
+    <p>All in all, this is not to say that fluid layouts is <span style="font-weight:bold;">the way</span> to go when trying to create a responsive website. It is definitely one of the possible ways. Personally, I prefered mix and matching approach between different types of method to achieve a responsive design; since these method all have its advantages and disadvatages depending on what you are trying to ultimately achieve.</p><br>
 
-    <div class="reflection">
-      <h2>Reflection</h2>
-      Add html tags where necessary to make the information make sense. 
-      You don't need to keep these questions visible.
-      <ul>
-        <li>How was it to implement these concepts?</li>
-        <li>How do you think smartphones and tablets have changed web design? How do you think new technology will change web design in the future?</li> 
-        <li>How do you think visually impaired people use the web? Can they? Should we design and development for them?</li> 
-        <li>What ideas and concepts have resonated with you when learning about the web and design? What seems stupid or doesn't make sense?</li> 
-      </ul>
-    </div>
+    <p>If you would like an example of a website created using the fluid layout, here you go: <a href="http://simplebits.com/"></a>Sample Fluid Layout</p><br>
 
-    <div class="references">
-      Add list items or delete what you don't need.
-      <ul>
-        <li><sup>1</sup>Put your reference here (p.s.) What does the sup tag do? Can you use it in your paragraphs to link your info to the references?</li>
-        <li><sup>2</sup><a href="http://techcrunch.com/2013/10/30/nearly-half-48-of-daily-users-of-facebook-are-now-mobile-only-says-ceo-zuckerberg/" target="_blank">Mobile data on Facebook users</a></li>
-        <li><sup>3</sup><a href="http://alistapart.com/article/responsive-web-design" target="_blank">A List Apart: Responsive Web Design</a></li>
-        <li><sup>4</sup><a href="http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/#more-75660">Smashing Magazine</a></li>
-        <li><sup>5</sup><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media Queries</a></li>
-        <li><sup>6</sup>reference here</li>
-        <li><sup>7</sup>reference here</li>
-      </ul>
-    </div>
+  </div><!-- fluid-layouts -->
 
-  </body>
+  <div class="reflection">
+    <h2>Reflection</h2>
+    Add html tags where necessary to make the information make sense. 
+    You don't need to keep these questions visible.
+    <ul>
+      <li>How was it to implement these concepts?</li>
+      <li>How do you think smartphones and tablets have changed web design? How do you think new technology will change web design in the future?</li> 
+      <li>How do you think visually impaired people use the web? Can they? Should we design and development for them?</li> 
+      <li>What ideas and concepts have resonated with you when learning about the web and design? What seems stupid or doesn't make sense?</li> 
+    </ul>
+  </div>
+
+  <div class="references">
+    Add list items or delete what you don't need.
+    <ul>
+      <li><sup>1</sup>Put your reference here (p.s.) What does the sup tag do? Can you use it in your paragraphs to link your info to the references?</li>
+      <li><sup>2</sup><a href="http://techcrunch.com/2013/10/30/nearly-half-48-of-daily-users-of-facebook-are-now-mobile-only-says-ceo-zuckerberg/" target="_blank">Mobile data on Facebook users</a></li>
+      <li><sup>3</sup><a href="http://alistapart.com/article/responsive-web-design" target="_blank">A List Apart: Responsive Web Design</a></li>
+      <li><sup>4</sup><a href="http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/#more-75660">Smashing Magazine</a></li>
+      <li><sup>5</sup><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media Queries</a></li>
+      <li><sup>6</sup><a href="http://getbootstrap.com/examples/grid/"></a></li>
+      <li><sup>7</sup><a href="http://www.creativebloq.com/css3/create-fluid-layouts-html5-and-css3-3142768">Creating Fluid Layout</a></li>
+      <li><sup>8</sup><a href="http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/">What's the Right Layout for you?</a></li>
+    </ul>
+  </div>
+
+  <div class="your-conclusion">
+    <h2>Your Conclusion</h2>
+    Discuss the purpose of responsive design and fluid layouts and whether
+    you think it's good practice to use them
+    Add html tags where necessary.
+  </div>
+
+  <hr/>
+
+  <footer>
+    <p>&copy; Copyrights Supakorn Laohasongkram 2014</p>
+  </footer>
+</body>
 </html>
