@@ -1,0 +1,23 @@
+/* You'll want to make the site responsive and nice looking here. Have fun!*/
+
+.nav-bar-container {
+/*	margin: 0 auto;
+	padding: 0;*/
+	text-align: center;
+}
+.responsive-navbar ul {
+	padding: 0;
+}
+.responsive-navbar ul li{
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+}
+
+/*First responsive media query*/
+@media (max-width: 828px) {
+.responsive-navbar ul li {
+	display: block;
+	margin: 0 auto;
+}	
+}
