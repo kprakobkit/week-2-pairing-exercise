@@ -54,8 +54,8 @@ table {
 body {
 	background:url('../img/halftone/halftone.png');
 	font-family: yo;
-	text-align: center;
-	line-height: 140%;
+/*	text-align: center;
+*/	line-height: 140%;
 }
 
 @font-face{
@@ -68,6 +68,11 @@ body {
     src: url('font/Monoglyceride.ttf');
 }*/
 
+.container {
+	margin: 0 auto;
+	width: 80%;
+
+}
 a:hover{
 	text-decoration: none;
 	color:black;
